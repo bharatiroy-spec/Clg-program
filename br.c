@@ -7,14 +7,14 @@ int main(){
 						int myarr[n];
 					   printf("\n");		
 						for(int i=0;i<n;i++){
-														printf("Enter %d th element of array:",i);
-														scanf("%d",&myarr[i]);
-														}
+										printf("Enter %d th element of array:",i);
+										scanf("%d",&myarr[i]);
+											}
 						printf("Befre Insertion\n");
 						int size=sizeof(myarr)/sizeof(myarr[0]);
 						for(int i=0;i<size;i++){
-																		printf("%d\t",myarr[i]);
-																		}
+											printf("%d\t",myarr[i]);
+												}
 						printf("\n");																				
 						printf("Choose the desired insertion:\n 1. At the begining,\n 2.In the middle,\n 3.At the end:");
 						scanf("%d", &type);
