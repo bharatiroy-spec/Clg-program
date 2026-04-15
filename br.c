@@ -38,11 +38,11 @@ int main(){
 													scanf("%d",&num);
 													printf("Enter the positionof insertion:");
 													scanf("%d",&pos);
-													for(int i=0;i<pos;i++){
-															myarr[i]=myarr[i];}
+													//for(int i=0;i<pos;i++){
+															//myarr[i]=myarr[i];}
 														
-									       		for(int i=pos+1;i<=size;i++){
-																			myarr[i]=myarr[i-1];}
+									       		for(int i=size;i>pos;i--){
+															myarr[i]=myarr[i-1];}
 															myarr[pos]=num;
 															printf("After Insertion\n");
 															for(int i=0;i<size;i++){
@@ -59,7 +59,20 @@ int main(){
 															for(int i=0;i<=size;i++){
 																				printf("%d\t",myarr[i]);}
 																				}
-												}								
+									//for deletation
+							int pos;
+							printf("Enter the position you want to delete:");
+							scanf("%d",&pos);
+							for(int=pos;i<size-1;i++){	
+									myarr[i]=myarr[i+1];
+								}
+
+							size--;
+							printf("After deletation\n");
+							for(int i=0;i<=size;i++){
+									printf("%d\t",myarr[i]);}
+																				
+}								
 																		
 																		
 																		
