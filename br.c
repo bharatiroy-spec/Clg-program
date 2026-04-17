@@ -63,6 +63,9 @@ int main(){
 				 }else{		int pos;
 							printf("Enter the position you want to delete:");
 							scanf("%d",&pos);
+
+					   		if(pos<1||pos>size){
+								break;}
 							for(int=pos;i<size-1;i++){	
 									myarr[i]=myarr[i+1];
 								}
