@@ -16,7 +16,7 @@ int main(){
 											printf("%d\t",myarr[i]);
 												}
 						printf("\n");																				
-						printf("Choose the desired insertion:\n 1. At the begining,\n 2.In the middle,\n 3.At the end:");
+						printf("Choose the desired insertion:\n 1. At the begining,\n 2.In the middle,\n 3.At the end,\n 4.Deletation:");
 						scanf("%d", &type);
 						
 						if(type==1){
@@ -48,7 +48,7 @@ int main(){
 															for(int i=0;i<size;i++){
 																				printf("%d\t",myarr[i]);
 																		}	
-							}else{	
+							}else if(type==3){	
 													int num;
 													printf("Enter the number you want to insert:");
 													scanf("%d",&num);
@@ -58,9 +58,9 @@ int main(){
 															printf("After Insertion\n");
 															for(int i=0;i<=size;i++){
 																				printf("%d\t",myarr[i]);}
-																				}
+																				
 									//for deletation
-							int pos;
+				 }else{		int pos;
 							printf("Enter the position you want to delete:");
 							scanf("%d",&pos);
 							for(int=pos;i<size-1;i++){	
