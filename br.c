@@ -1,84 +1,32 @@
 #include<stdio.h>
+
 int main(){
-						int type,n;
-					
-						printf("Enter the number of elements of Array:");
-						scanf("%d",&n);
-						int myarr[n];
-					   printf("\n");		
-						for(int i=0;i<n;i++){
-										printf("Enter %d th element of array:",i);
-										scanf("%d",&myarr[i]);
-											}
-						printf("Befre Insertion\n");
-						int size=sizeof(myarr)/sizeof(myarr[0]);
-						for(int i=0;i<size;i++){
-											printf("%d\t",myarr[i]);
-												}
-						printf("\n");																				
-						printf("Choose the desired insertion:\n 1. At the begining,\n 2.In the middle,\n 3.At the end,\n 4.Deletation:");
-						scanf("%d", &type);
-						
-						if(type==1){
-													int num;
-													printf("Enter the number you want to insert:");
-													scanf("%d",&num);
-													for(int i=size;i>=0;i--){
-															myarr[i+1]=myarr[i];}
-															myarr[0]=num;
-															printf("After Insertion\n");
-															for(int i=0;i<size;i++){
-																				printf("%d\t",myarr[i]);
-																		}
-																		}
-																		
-				 else if(type==2){		
-													int num,pos;
-													printf("Enter the number you want to insert:");
-													scanf("%d",&num);
-													printf("Enter the positionof insertion:");
-													scanf("%d",&pos);
-													//for(int i=0;i<pos;i++){
-															//myarr[i]=myarr[i];}
-														
-									       		for(int i=size;i>pos;i--){
-															myarr[i]=myarr[i-1];}
-															myarr[pos]=num;
-															printf("After Insertion\n");
-															for(int i=0;i<size;i++){
-																				printf("%d\t",myarr[i]);
-																		}	
-							}else if(type==3){	
-													int num;
-													printf("Enter the number you want to insert:");
-													scanf("%d",&num);
-													for(int i=0;i<size;i++){
-															myarr[i]=myarr[i];
-															myarr[size]=num;}
-															printf("After Insertion\n");
-															for(int i=0;i<=size;i++){
-																				printf("%d\t",myarr[i]);}
-																				
-									//for deletation
-				 }else{		int pos;
-							printf("Enter the position you want to delete:");
-							scanf("%d",&pos);
-
-					   		if(pos<1||pos>size){
-								break;}
-							for(int=pos;i<size-1;i++){	
-									myarr[i]=myarr[i+1];
-								}
-
-							size--;
-							printf("After deletation\n");
-							for(int i=0;i<=size;i++){
-									printf("%d\t",myarr[i]);}
-																				
-}								
-																		
-																		
-																		
-												
-																		
-												
+	         	int size,i,pos;
+				printf("Enter the size of the array:");
+				scanf("%d",&size);
+				int myarr[size];
+				size-=1;
+				
+				for(int i=0;i<=size;i++){
+							printf("	Enter %d array elements:",i);
+							scanf("%d",&myarr[i]);
+							}
+							int search;
+							printf("Enter the element you want to search:");
+							scanf("%d",&search);
+					for(int i=0;i<=size;i++){			
+		   					if(search==myarr[i]){
+									    pos=i;
+										//printf("The desired %d element found at %d position",search,i);
+										//break;
+				}
+			}
+					if(pos==000){
+										printf(" Type a valid number to search");
+				
+			
+					}else{
+								printf("The desired %d element found at %d position",search,pos);
+					}
+	return 0;
+	}
