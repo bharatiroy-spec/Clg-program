@@ -21,7 +21,7 @@ int main(){
 										//break;
 				}
 			}
-					if(pos==000){
+					if(pos==999){
 										printf(" Type a valid number to search");
 				
 			
