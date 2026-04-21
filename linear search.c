@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	         	int size,i,pos=0;
+	         	int size,i,pos=999;
 				printf("Enter the size of the array:");
 				scanf("%d",&size);
 				int myarr[size];
