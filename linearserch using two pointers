@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main(){
+	int size,i,j,min,pos;
+					
+	printf("Enter the number of elements of Array:");
+	scanf("%d",&size);
+	int myarr[size];
+	
+	size-=1;
+	printf("\n");		
+	for(int i=0;i<=size;i++){
+		printf("Enter %d  element of array:",i);
+		scanf("%d",&myarr[i]);
+	}
+	printf("Before Sorting\n");
+	
+	for(int i=0;i<=size;i++){
+			printf("%d\t",myarr[i]);
+			}
+	printf("\n");										
+	for(i=0;i<=size;i++){
+		for(j=i+1;j<=size;j++){
+			if(myarr[i]>myarr[j]){
+				min=myarr[i];
+				myarr[i]=myarr[j];
+				myarr[j]=min;
+				}
+				}
+				}
+	printf("After Sorting\n");
+	
+	for(int i=0;i<=size;i++){
+			printf("%d\t", myarr[i]);
+			}
+		
+	return 0;
+	}
+	
